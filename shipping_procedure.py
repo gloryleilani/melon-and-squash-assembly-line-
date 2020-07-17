@@ -84,10 +84,10 @@ def assess_and_pack_orders():
             robots.pickerbot.pick(m)
             count += 1
 
-            # Prepare the melon
+            # Prepare the melon or squash
             m.prep()
 
-            # Evaluate the melon
+            # Evaluate the melon or squash
             presentable = robots.inspectorbot.evaluate(m)
 
             if presentable:
